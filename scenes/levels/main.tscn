@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://bbo2rd47swv0t"]
+[gd_scene load_steps=2 format=3 uid="uid://bbo2rd47swv0t"]
+
+[ext_resource type="PackedScene" uid="uid://ci28j4h4bu7w1" path="res://scenes/characterbody2d/character_body_2d.tscn" id="1_8xb86"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="SceneObjects" type="Node" parent="."]
+
+[node name="CharacterBody2D" parent="SceneObjects" instance=ExtResource("1_8xb86")]
+
+[node name="Camera2D" type="Camera2D" parent="SceneObjects/CharacterBody2D"]
